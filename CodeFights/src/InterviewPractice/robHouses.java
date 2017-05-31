@@ -21,10 +21,28 @@ package InterviewPractice;
  */
 public class robHouses {
 
+    private static int max(int a, int b) {
+        return a < b ? b : a;
+    }
     public static int houseRobber(int[] nums) {
         int[] max = new int[nums.length];
-        
-        return 0;
+        if (nums.length <= 0) return 0;
+        else if (nums.length == 1) return nums[0];
+        else if (nums.length == 2) return max(nums[0], nums[1]);
+        else {
+            max[0] = nums[0];
+            max[1] = max(nums[0], nums[1]);
+            for (int i = 2; i < nums.length; i++) {
+                int curr = max[i - 2] + nums[i];
+                int prev = max[i - 1];
+                max[i] = prev < curr ? curr : prev;
+            }
+
+        }
+        return max[nums.length - 1];
     }
 
+    public static void main(String...args) {
+        System.out.println(houseRobber(new int[] {1, 7, 9, 4}));
+    }
 }

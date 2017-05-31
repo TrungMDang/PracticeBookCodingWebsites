@@ -1,4 +1,4 @@
-package String;
+package Array_Strings;
 
 import java.util.*;
 
@@ -8,7 +8,7 @@ import java.util.*;
  * Anagrams: two strings to be anagrams of each other if the first string's letters can be rearranged to form the
  * second string. In other words, both strings must contain the same exact letters in the same exact frequency.
  */
-public class Main {
+public class MakingAnagrams {
     public static void main(String...args) {
 
         //Test strings
