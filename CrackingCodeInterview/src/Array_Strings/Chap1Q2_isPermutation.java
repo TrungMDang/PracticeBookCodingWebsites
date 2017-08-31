@@ -10,7 +10,7 @@ import java.util.HashMap;
  * Example: s1 = "abcd", s2 = "bdca" => Return true.
  *          s1 = "abcd", s2 = "bdda" => Return false;
  * Solution:
- *      Hash one of the string
+ *      HashMap one of the string
  *      Check character counts of the other string, each time decrease the char's mapping value by 1.
  *      If the value < 0, return false since two string has same lengths but not same character counts.
  *      Otherwise return true.
