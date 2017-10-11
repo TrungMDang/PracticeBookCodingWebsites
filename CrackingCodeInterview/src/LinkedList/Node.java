@@ -22,6 +22,10 @@ public class Node<E> {
         return prev;
     }
 
+    public E data() {
+        return this.data;
+    }
+
     @Override
     public String toString() {
         return data.toString();
