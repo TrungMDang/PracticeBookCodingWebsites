@@ -14,6 +14,12 @@ public class Node<E> {
         data = arg;
     }
 
+    public Node() {
+        data = null;
+        next = null;
+        prev = null;
+    }
+
     public Node next() {
         return next;
     }
