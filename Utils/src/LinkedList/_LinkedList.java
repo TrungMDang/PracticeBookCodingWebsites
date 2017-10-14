@@ -1,8 +1,6 @@
-package LinkedLists;
+package LinkedList;
 
 import Node.ListNode;
-
-import java.util.List;
 
 /**
  * Created by Trung on 6/5/2017.

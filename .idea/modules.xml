@@ -4,10 +4,10 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CodeFights/CodeFights.iml" filepath="$PROJECT_DIR$/CodeFights/CodeFights.iml" />
       <module fileurl="file://$PROJECT_DIR$/CrackingCodeInterview/CrackingCodeInterview.iml" filepath="$PROJECT_DIR$/CrackingCodeInterview/CrackingCodeInterview.iml" />
-      <module fileurl="file://$PROJECT_DIR$/DataStructures/DataStructures_Utils.iml" filepath="$PROJECT_DIR$/DataStructures/DataStructures_Utils.iml" />
       <module fileurl="file://$PROJECT_DIR$/GeeksForGeeks/GeeksForGeeks.iml" filepath="$PROJECT_DIR$/GeeksForGeeks/GeeksForGeeks.iml" />
       <module fileurl="file://$PROJECT_DIR$/LeetCode/LeetCode.iml" filepath="$PROJECT_DIR$/LeetCode/LeetCode.iml" />
       <module fileurl="file://$PROJECT_DIR$/PracticeBookCodingWebsites.iml" filepath="$PROJECT_DIR$/PracticeBookCodingWebsites.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Utils/Utils.iml" filepath="$PROJECT_DIR$/Utils/Utils.iml" />
     </modules>
   </component>
 </project>
