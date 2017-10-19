@@ -1,4 +1,4 @@
-package Node;
+package TreeNode;
 
 /**
  * Created by Trung on 6/5/2017.

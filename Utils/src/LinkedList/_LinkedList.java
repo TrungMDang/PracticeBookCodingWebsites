@@ -1,6 +1,6 @@
 package LinkedList;
 
-import Node.ListNode;
+import TreeNode.ListNode;
 
 /**
  * Created by Trung on 6/5/2017.
