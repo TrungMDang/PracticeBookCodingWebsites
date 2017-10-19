@@ -16,11 +16,10 @@ public class _144_BinaryTreePreorderTest {
 
     // Java program to find maximum sum leaf to root
 // path in Binary Tree
-    TreeNode root;
-    @Before
     // driver function to test the above functions
-    public void setUp(String args[])
-    {
+    public static void main(String...args) throws Exception {
+        TreeNode root = null;
+
         // Input the number of test cases you want to run
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
@@ -30,7 +29,7 @@ public class _144_BinaryTreePreorderTest {
             HashMap<Integer, TreeNode> m = new HashMap<> ();
             int n = sc.nextInt();
 
-            this.root = null;
+            root = null;
 
             while (n > 0)
             {
@@ -56,20 +55,11 @@ public class _144_BinaryTreePreorderTest {
                 m.put(n2, child);
                 n--;
             }
-
-            try {
-                preorderTraversal(root);
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-            System.out.print("\n");
             t--;
         }
-    }
-
-    @Test
-    public void preorderTraversal(TreeNode root) throws Exception {
-
+        _144_BinaryTreePreorder solution = new _144_BinaryTreePreorder();
+        List<Integer> list = solution.preorderTraversal(root);
+        System.out.println(list.toArray().toString());
     }
 
 }
