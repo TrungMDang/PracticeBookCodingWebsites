@@ -1,31 +1,29 @@
 package Easy;
 
-import java.util.HashSet;
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.Set;
-
+import Utils.CreateTree;
+import Utils.TreeNode;
 /**
  * Created by Trung on 10/17/2017.
  */
 public class _617_Merge2BinaryTrees {
 
     public static TreeNode merge(TreeNode t1, TreeNode t2) {
-        Queue<TreeNode> q1 = new LinkedList<>();
-        Queue<TreeNode> q2 = new LinkedList<>();
-        Set<TreeNode> visited1 = new HashSet<>();
-        Set<TreeNode> visited2 = new HashSet<>();
+        if (t1 != null && t2 != null)
+        {
+            t1.setVal(t2.getVal() + t1.getVal());
+        } else {
+            return t1 == null ? t2 : t1;
+        }
 
-        q1.add(t1);
-        q2.add(t2);
 
-        return null;
+        return t1;
     }
 
-    private static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-        TreeNode(int x) { val = x; }
+    public static void main(String...args) {
+        TreeNode tree1 = CreateTree.readConsole();
+        TreeNode tree2 = CreateTree.readConsole();
+        System.out.println(tree1);
+        System.out.println(tree2);
+
     }
 }
