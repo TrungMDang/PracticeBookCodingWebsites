@@ -166,6 +166,10 @@ public class MyLinkedList<E> {
             return result;
         }
 
+        public Node<E> getCurr() {
+            return this.curr;
+        }
+
         public void remove() {
             if (!removeOK) {
                 throw new IllegalStateException("Cannot remove this element.");
@@ -182,13 +186,22 @@ public class MyLinkedList<E> {
     /**
      * Created by Trung on 6/27/2017.
      */
-    private static class Node<E> {
+    public static class Node<E> {
         private E data;
 
         private Node next;
 
         public Node(E arg) {
             data = arg;
+            next = null;
+        }
+
+        public Node getNext() {
+            return next;
+        }
+
+        public void setNext(Node<E> node) {
+            next = node;
         }
 
         @Override
